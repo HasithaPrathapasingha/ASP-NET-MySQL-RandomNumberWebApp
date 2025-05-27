@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Random Number Generator";
+}
+<h1>Random Number Generator</h1>
+<form method="post" asp-action="Generate">
+    <button type="submit">Generate Number</button>
+</form>
+
+@if (ViewBag.RandomNumber != null){
+    <h2>Your Random Number: @ViewBag.RandomNumber</h2>
+}
